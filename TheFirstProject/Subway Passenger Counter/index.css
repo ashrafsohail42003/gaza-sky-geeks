@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('img.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-box {
+  background-color: rgba(255, 255, 255, 0); 
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.box1 h1 {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.txt {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.btns-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.line1, .line2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 18px;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 100px;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+#plus-btn {
+  background-color: #e74c3c; 
+}
+#plus-btn:hover {
+  background-color: #ff6b5b;
+  border-color: #fff;
+}
+
+#save-btn {
+  background-color: #3498db; 
+}
+#save-btn:hover {
+  background-color: #5dade2;
+  border-color: #fff;
+}
+
+#clr-btn {
+  background-color: #f1c40f; 
+  color: black;
+}
+#clr-btn:hover {
+  background-color: #f7dc6f;
+  border-color: #333;
+}
+
+.history-box {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.history-box h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+#all-saved {
+  font-size: 0.95rem;
+  color: #000;
+}
+
+.ft {
+  font-size: 0.8rem;
+  color: #000;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .line1, .line2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}
